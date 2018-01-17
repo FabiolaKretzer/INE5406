@@ -12,5 +12,7 @@ end;
 
 architecture a1 of multiplex2x1 is
 begin
-    -- INSERT YOUR CODE HERE
-end;
+    output <= input0 when sel = '0' else
+    input1;
+    
+end a1;
